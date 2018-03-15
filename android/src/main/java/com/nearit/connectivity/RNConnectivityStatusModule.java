@@ -162,7 +162,7 @@ public class RNConnectivityStatusModule extends ReactContextBaseJavaModule imple
   @Override
   public void onConnected(@Nullable Bundle bundle) {
     final LocationRequest locationRequest = LocationRequest.create()
-            .setPriority(LocationRequest.PRIORITY_LOW_POWER);
+            .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
     final LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
             .addLocationRequest(locationRequest)
